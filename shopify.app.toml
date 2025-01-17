@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "9cbe38a9b6276a331ecf21d78af415cb"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+name = "new-customer-info"
+handle = "new-customer-info"
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_customers,customer_read_customers,customer_write_customers"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "nobu-checkout-extensibility2.myshopify.com"
+include_config_on_deploy = true
